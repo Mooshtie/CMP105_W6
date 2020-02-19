@@ -11,6 +11,13 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	ball.setPosition(200, 50);
 	ball.setWindow(window);
 	ball.setInput(input);
+
+	handTexture.loadFromFile("gfx/icon.png");
+	hand.setTexture(&handTexture);
+	hand.setSize(sf::Vector2f(10, 10));
+	hand.setPosition(200, 50);
+	hand.setWindow(window);
+	hand.setInput(input);
 }
 
 Level::~Level()
@@ -33,6 +40,7 @@ void Level::handleInput(float dt)
 void Level::update(float dt)
 {
 	ball.update(dt);
+	hand.update(dt);
 }
 
 // Render level
@@ -41,6 +49,7 @@ void Level::render()
 	beginDraw();
 
 	window->draw(ball);
+	window->draw(hand);
 
 	endDraw();
 }

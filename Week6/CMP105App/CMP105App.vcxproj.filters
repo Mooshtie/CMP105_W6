@@ -39,6 +39,9 @@
     <ClCompile Include="ForceObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Chaser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.txt">
@@ -65,6 +68,9 @@
       <Filter>Framework</Filter>
     </ClInclude>
     <ClInclude Include="ForceObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Chaser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

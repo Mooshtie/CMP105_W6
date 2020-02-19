@@ -5,6 +5,7 @@
 #include <string.h>
 #include <iostream>
 #include "ForceObject.h"
+#include "Chaser.h"
 
 
 class Level{
@@ -28,4 +29,6 @@ private:
 	// More level variables
 	ForceObject ball;
 	sf::Texture ballTexture;
+	Chaser hand;
+	sf::Texture handTexture;
 };
