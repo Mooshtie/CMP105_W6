@@ -10,6 +10,7 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	ball.setSize(sf::Vector2f(50, 50));
 	ball.setPosition(200, 50);
 	ball.setWindow(window);
+	ball.setInput(input);
 }
 
 Level::~Level()
@@ -25,6 +26,7 @@ void Level::handleInput(float dt)
 	{
 		window->close();
 	}
+	ball.handleInput(dt);
 }
 
 // Update game objects
