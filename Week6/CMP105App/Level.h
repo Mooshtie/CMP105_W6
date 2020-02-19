@@ -4,6 +4,7 @@
 #include "Framework/Input.h"
 #include <string.h>
 #include <iostream>
+#include "ForceObject.h"
 
 
 class Level{
@@ -25,4 +26,6 @@ private:
 	Input* input;
 
 	// More level variables
+	ForceObject ball;
+	sf::Texture ballTexture;
 };
