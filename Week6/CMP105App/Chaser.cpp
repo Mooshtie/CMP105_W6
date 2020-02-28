@@ -1,7 +1,7 @@
 #include "Chaser.h"
 Chaser::Chaser()
 {
-	acceleration = 100.f;
+	acceleration = 10.f;
 }
 
 void Chaser::update(float dt)
