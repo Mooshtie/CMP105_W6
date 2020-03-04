@@ -18,6 +18,13 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	hand.setPosition(200, 50);
 	hand.setWindow(window);
 	hand.setInput(input);
+
+	proTexture.loadFromFile("gfx/Beach_Ball.png");
+	projectile.setTexture(&proTexture);
+	projectile.setSize(sf::Vector2f(75, 75));
+	projectile.setPosition(100, 200);
+	projectile.setWindow(window);
+	projectile.setInput(input);
 }
 
 Level::~Level()
@@ -34,6 +41,7 @@ void Level::handleInput(float dt)
 		window->close();
 	}
 	ball.handleInput(dt);
+	projectile.handleInput(dt);
 }
 
 // Update game objects
@@ -41,6 +49,7 @@ void Level::update(float dt)
 {
 	ball.update(dt);
 	hand.update(dt);
+	projectile.update(dt);
 }
 
 // Render level
@@ -50,6 +59,8 @@ void Level::render()
 
 	window->draw(ball);
 	window->draw(hand);
+	window->draw(projectile);
+	projectile.Draw();
 
 	endDraw();
 }

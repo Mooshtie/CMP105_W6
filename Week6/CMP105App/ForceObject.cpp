@@ -21,11 +21,11 @@ void ForceObject::handleInput(float dt)
 	}
 
 	//teleport
-	if (input->isMouseLDown())
+	/*if (input->isMouseLDown())
 	{
 		input->setMouseLDown(false);
 		setPosition(input->getMouseX(), input->getMouseY());
-	}
+	}*/
 }
 
 void ForceObject::update(float dt)

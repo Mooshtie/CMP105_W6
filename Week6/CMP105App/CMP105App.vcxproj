@@ -157,6 +157,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AngryBirdExample.cpp" />
     <ClCompile Include="Chaser.cpp" />
     <ClCompile Include="ForceObject.cpp" />
     <ClCompile Include="Framework\Animation.cpp" />
@@ -171,6 +172,7 @@
     <Text Include="README.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AngryBirdExample.h" />
     <ClInclude Include="Chaser.h" />
     <ClInclude Include="ForceObject.h" />
     <ClInclude Include="Framework\Animation.h" />
@@ -178,6 +180,7 @@
     <ClInclude Include="Framework\GameObject.h" />
     <ClInclude Include="Framework\Vector.h" />
     <ClInclude Include="Level.h" />
+    <ClInclude Include="Line.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

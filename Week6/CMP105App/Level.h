@@ -6,6 +6,8 @@
 #include <iostream>
 #include "ForceObject.h"
 #include "Chaser.h"
+#include "AngryBirdExample.h"
+#include "Line.h"
 
 
 class Level{
@@ -31,4 +33,6 @@ private:
 	sf::Texture ballTexture;
 	Chaser hand;
 	sf::Texture handTexture;
+	AngryBirdExample projectile;
+	sf::Texture proTexture;
 };
